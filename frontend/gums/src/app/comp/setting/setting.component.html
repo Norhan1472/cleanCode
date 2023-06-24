@@ -1,0 +1,70 @@
+<!-- =============== Navigation ================ -->
+<div class="root">
+    <div class="container">
+      <div>
+        <app-side-bar></app-side-bar>
+      </div>
+  
+      <!-- ========================= Main ==================== -->
+      <div class="test">
+        <div class="main">
+          <div class="topbar">
+            <div class="toggle">
+              <ion-icon name="menu-outline"></ion-icon>
+            </div>
+  
+            <div class="user">
+              <img src="assets/imgs/customer01.jpg" alt="" />
+            </div>
+          </div>
+  
+          <!-- ======================= Cards ================== -->
+  
+          <div id="containerAnimation" class="container-bottom-to-up">
+            <p class="top-to-bottom">WELCOME TO GUC</p>
+          </div>
+  
+          <div class="details">
+            <div class="recentOrders">
+                
+              <form action="#" method="post" >
+                
+                <fieldset>
+                  <legend>
+                    <span class="number">-</span>  Update User Settings
+                  </legend>
+  
+                  <label for="name">Email:</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="user_name"
+                    formControlName="problem_name"
+                    required
+                  />
+  
+                  <label for="name">Password:</label>
+                  <input
+                    type="text"
+                    id="mail"
+                    name="user_email"
+                    formControlName="investigate_Notes"
+                    required
+                  />
+                </fieldset>
+                
+                <!-- routerLink="/viewfunction/{{issue.topic_id}} -->
+                <div class="Savebtn">
+                <button 
+                  class="addbtn" type="submit">
+                  Save
+                </button>
+              </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

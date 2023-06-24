@@ -1,0 +1,80 @@
+
+    <div class="root">
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div>
+            <app-side-bar></app-side-bar>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+            <div id="containerAnimation" class="container-bottom-to-up" > 
+                <p class="top-to-bottom">WELCOME TO GUC</p> 
+            </div>
+
+
+
+            
+            <!-- ================ Order Details List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <p class="mainhead">Function Name: {{funtionName}}</p>
+                    <br>
+                    
+                    <p class="functionheads bodies" style="font-size: 24px;"> Note Description ->> </p>
+                    <p class="bodies">
+                       {{functionDesc}}
+                    </p>
+
+                      <br>
+                    
+                    <p class="functionheads ">Suggestion Section  ->> </p> 
+                    <p class="bodies">
+                       {{functionSuggestion}}
+                    </p>
+                    
+                    <!-- ---------------------- -->
+                    <br>
+                    <hr id="1">
+                    
+                    <br>
+                    <p class="mainhead">Topices: </p>
+                    <br>
+                         
+                    <div class="topices" *ngFor="let topic of data">
+
+                        <p class="functionheads topictypes">TopicName : {{topic.topicName}}</p>
+                        <p class="functionheads ">Topic Discription ->> </p>
+
+                        <p class="bodies">
+                         {{topic.topicDescription}}
+                        </p>
+                    </div>
+                    
+                    
+                                                                    
+                    <button class="addmore" type="submit" (click)="genrate()">Genrate Report</button>
+    
+                    
+                </div>
+
+               
+            
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+
+    
